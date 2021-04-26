@@ -112,3 +112,6 @@ sns.heatmap(mat.T / 100, square=True,
                   yticklabels=["POP", "ROCK", "LATIN", "R&B", "EDM", "Country", "Gospel"], cmap='viridis')
 plt.xlabel('true label')
 plt.ylabel('predicted label')
+
+f = open("Datasets/RFModel",'wb')
+pickle.dump(model_rfCat,f)
