@@ -73,7 +73,7 @@ for i in range(0,len(years1)):
 finalLyrics2 = np.array(finalLyrics)
 finalYears2 = np.array(finalYears)
 os.getcwd()
-f = open("NLPproject/finalLyrics1",'wb')
+f = open("Datasets/finalLyrics1",'wb')
 pickle.dump([finalLyrics2,finalYears2],f)
 
 finalYears = []
@@ -85,7 +85,7 @@ for i in range(0,len(years2)):
 finalLyrics2 = np.array(finalLyrics)
 finalYears2 = np.array(finalYears)
 os.getcwd()
-f = open("NLPproject/finalLyrics2",'wb')
+f = open("Datasets/finalLyrics2",'wb')
 pickle.dump([finalLyrics2,finalYears2],f)
 
 finalYears = []
@@ -97,7 +97,7 @@ for i in range(0,len(years3)):
 finalLyrics2 = np.array(finalLyrics)
 finalYears2 = np.array(finalYears)
 os.getcwd()
-f = open("NLPproject/finalLyrics3",'wb')
+f = open("Datasets/finalLyrics3",'wb')
 pickle.dump([finalLyrics2,finalYears2],f)
 finalYears = []
 finalLyrics = []
@@ -109,7 +109,7 @@ for i in range(0,len(years4)):
 finalLyrics2 = np.array(finalLyrics)
 finalYears2 = np.array(finalYears)
 os.getcwd()
-f = open("NLPproject/finalLyrics4",'wb')
+f = open("Datasets/finalLyrics4",'wb')
 pickle.dump([finalLyrics2,finalYears2],f)
 
 finalYears = []
@@ -121,7 +121,7 @@ for i in range(0,len(years5)):
 finalLyrics2 = np.array(finalLyrics)
 finalYears2 = np.array(finalYears)
 os.getcwd()
-f = open("NLPproject/finalLyrics5",'wb')
+f = open("Datasets/finalLyrics5",'wb')
 pickle.dump([finalLyrics2,finalYears2],f)
 
 finalYears = []
@@ -133,7 +133,7 @@ for i in range(0,len(years6)):
 finalLyrics2 = np.array(finalLyrics)
 finalYears2 = np.array(finalYears)
 os.getcwd()
-f = open("NLPproject/finalLyrics6",'wb')
+f = open("Datasets/finalLyrics6",'wb')
 pickle.dump([finalLyrics2,finalYears2],f)
 
 finalYears = []
@@ -145,5 +145,5 @@ for i in range(0,len(years7)):
 finalLyrics2 = np.array(finalLyrics)
 finalYears2 = np.array(finalYears)
 os.getcwd()
-f = open("NLPproject/finalLyrics7",'wb')
+f = open("Datasets/finalLyrics7",'wb')
 pickle.dump([finalLyrics2,finalYears2],f)
