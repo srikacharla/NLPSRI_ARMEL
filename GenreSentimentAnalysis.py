@@ -4,6 +4,7 @@ import numpy as np
 nltk.download('vader_lexicon')
 nltk.download('punkt')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+import matplotlib.pyplot as plt
 
 sia = SIA()
 import os
@@ -183,7 +184,6 @@ print("positivity ratio")
 print(positive7/(positive7+negative7+neutral7))
 
 
-import matplotlib.pyplot as plt
 
 positiveFinal = []
 positiveFinal.append(round(positive1/(positive1+negative1+neutral1),1))
