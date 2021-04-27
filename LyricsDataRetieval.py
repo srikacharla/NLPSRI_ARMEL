@@ -46,6 +46,28 @@ L7 = np.array(populateLyrics(C_7))
 
 Lyrcs = [L1, L2, L3, L4, L5, L6, L7]
 
+
+f = open("Datasets/L1",'wb')
+pickle.dump(L1,f)
+
+f = open("Datasets/L2",'wb')
+pickle.dump(L2,f)
+
+f = open("Datasets/L3",'wb')
+pickle.dump(L3,f)
+
+f = open("Datasets/L4",'wb')
+pickle.dump(L4,f)
+
+f = open("Datasets/L5",'wb')
+pickle.dump(L5,f)
+
+f = open("Datasets/L6",'wb')
+pickle.dump(L6,f)
+
+f = open("Datasets/L7",'wb')
+pickle.dump(L7,f)
+
 with open('/Datasets/lyrics_combined', 'wb') as f:
   pickle.dump(Lyrcs, f)
 
