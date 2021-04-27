@@ -5,9 +5,10 @@ Github repository: https://github.com/srikacharla/NLPSRI_ARMEL
 # Project title : NLP for music lyrics analysis.
 
 # 1. Description of project
-- Through this project we aim to build and train models to classify songs into respective genres through their lyrics. We performed similarity analysis of songs of various genres over different periods. We also looked at how accurate models can be when they are trained on lyrics data and how the models perform when we throw different kinds of data at them. We also gained insight on what goes on inside a model and how obvious things about a dataset don’t actually play a significant role in the prediction process. We also performed sentiment analysis on these genres to guage which genres had the most positive songs and what happens to existing sentiment analysis tools when we throw non english data at them. 
 
-- Expected output:
+- Through this project we aim to build and train models to classify songs into respective genres through their lyrics. We performed similarity analysis of songs of various genres over different periods. We also looked at how accurate models can be when they are trained on lyrics data and how the models perform when we throw different kinds of data at them. We also gained insight on what goes on inside a model and how obvious things about a dataset don’t actually play a significant role in the prediction process. We also performed sentiment analysis on these genres to gauge which genres had the most positive songs and what happens to existing sentiment analysis tools when we input non english data. 
+
+- Final report + all expected output:
 https://drive.google.com/file/d/1SpkxsUd5abPvv-wVoAq4NN445LPyGAce/view?usp=sharing
 
 - The project proposal document can be found here:
@@ -34,8 +35,8 @@ The dependencies used to execute every Python scripts are the following ones:
 - lyrics genius (For more information, click [here](https://pypi.org/project/lyricsgenius/))
 - json (For more information, click [here](https://docs.python.org/3/library/json.html))
 - seaborn (For more information, click [here](https://seaborn.pydata.org/))
-- pygoogletranslation (For more information, click [here] (https://pypi.org/project/pygoogletranslation/))
-- googletrans (For more information, click [here] (https://pypi.org/project/googletrans/))
+- pygoogletranslation (For more information, click [here](https://pypi.org/project/pygoogletranslation/))
+- googletrans (For more information, click [here](https://pypi.org/project/googletrans/))
 
 
 While some Python modules are already installed by default,some are not. 
@@ -47,10 +48,10 @@ Missing modules must be installed before running all code.
 pip install -r requirements.txt
 ```
 
-***requirements.txt*** is found [here](https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/requirements.txt).
+***requirements.txt*** is found [here](https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/requirements.txt). 
 
 # 4. How to build project
-Clone this repository using `git clone: https://github.com/srikacharla/NLPSRI_ARMEL.git
+Clone this repository using `git clone: https://github.com/srikacharla/NLPSRI_ARMEL.git 
 Follow steps #5 (how to run project)
 
 
@@ -65,42 +66,45 @@ pip install -r requirements.txt
 
 
 ## 5.1
-Data scrapping
+Data scraping
 
-Song lyrics were extracted using Lyrics genius database. The algorithm for extraction can be found in file(https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/DateDataRetrieval.py). Note that the files: List_of_artists.csv is required to retrieve that data. It contains the list of artists used to extract lyrics from the Genius Database. It can be found [here](https://github.com/srikacharla/NLPSRI_ARMEL/tree/main/Datasets)
+Song lyrics were extracted using Lyrics genius database. The algorithm for extraction can be found in file (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/DateDataRetrieval.py). Note that the files: List_of_artists.csv is required to retrieve that data. It contains the list of artists used to extract lyrics from the Genius Database. It can be found [here](https://github.com/srikacharla/NLPSRI_ARMEL/tree/main/Datasets)
 To download only lyrics data, run this file(https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/LyricsDataRetieval.py) 
 
 To download lyrics data with date information, run this file (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/DateDataRetrieval.py) 
 
 To download Bollywood songs, run this file (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/BollywoodSongsRetrieval.py) 
 
-To translate the Bollywood lyrics and save this data, run this file (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/BollywoodSongsTranslate.py)
+To translate the Bollywood lyrics and save this data, run this file (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/BollywoodSongsTranslate.py) 
 
-*** Note: In order to process through the project without extracting the data from Database (which is time consuming). All data extracted necessary for the project has been stored and can be found in [here](https://github.com/srikacharla/NLPSRI_ARMEL/tree/main/Datasets). 
+*** Note: In order to process through the project without extracting the data from Database (which is time-consuming) every time, all extracted data necessary for the project has been stored and can be found in [here](https://github.com/srikacharla/NLPSRI_ARMEL/tree/main/Datasets). 
 
 ** Important note** 
 In order to run any other files, you first need to have the data in the Datasets folder. 
+Link to download Datasets data: https://1drv.ms/u/s!AiZZze8uHoL6kRLJxuTefXUZCZzz?e=o3eO1b
 
 ## 5.2 
 Similarity within same music genre
 
 Run file: sim_within.py, found here (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/sim_within.py)  
 
-Output is similarity matrices between song lyrics of the same music. See final report Fig. 6 for expected outcome & detailed explanation 
+Output is similarity matrices between song lyrics of the same music genres. See final report Fig. 6 for expected outcome & detailed explanation. 
 
 ## 5.3 
 Similarity between different genre of music
 
 Run file: sim_between.py, found here (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/sim_between.py)
 
-Output is similarity matrices between different music genres. See final report Fig. 7 for expected outcome & detailed explanation
+Output is similarity matrices between different music genres. See final report Fig. 7 for expected outcome & detailed explanation.
 
 ## 5.4 
 Change of music genres similarity across time  
 
 Run file: sim_by_years.py, found here (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/sim_by_years.py)    
 
-Output is plot change of similarity score between eac . See final report Fig. 7 for expected outcome & detailed explanation
+Output is plot change of similarity score between each music genre against others. It shows how the lyrical dependency between song lyrics has evolved across time. See final report Fig. 8 for expected outcome & detailed explanation.
+
+*** Input here is similarity matrices built here: (https://github.com/srikacharla/NLPSRI_ARMEL/blob/extract_year_sim.py). Results were saved here (https://github.com/srikacharla/NLPSRI_ARMEL/blob/similarity_analysis), and were used in sim_by_years.py
 
 ## 5.5 
 Training
@@ -112,7 +116,6 @@ Output is the confusion matrix of all three models. This file also saves the Ran
 Prediction 
 Run file1: BollywoodSongPredictionFile.py found here 
 (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/BollywoodSongPredictionFile.py)
-
 Output is the graph showing the predicted labels for bollywood songs. 
 
 Run file2: BollywoodSongsPredictionAfterTranslation.py found here (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/BollywoodSongsPredictionAfterTranslation.py)
@@ -131,6 +134,3 @@ Run file2: BollywoodSongsSentiment.py found here
 Output is the graph showing the % of Bollywood songs in their respective sentiments.
 
 Run file3: BollywoodSongsSentimentAnalysisAfterTranslation.py found here (https://github.com/srikacharla/NLPSRI_ARMEL/blob/main/BollywoodSongsSentimentAnalysisAfterTranslation.py)
-
-
-
