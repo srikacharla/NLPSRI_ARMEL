@@ -1,0 +1,11 @@
+transformers
+emoji
+emot
+pandas
+numpy
+sklearn
+torch
+tensorflow
+nltk
+beautifulsoup4
+tabula-py
