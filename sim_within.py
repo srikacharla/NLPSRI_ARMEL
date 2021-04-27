@@ -29,13 +29,13 @@ def returnSimilarityMatrix(doc,bit):
     return pair_similarity
 # ------------------------------------------------------| Loading data
 # Downloading the Lyrics - only
-L1 = pickle.load( open( "NLP_project/L1", "rb" ) )
-L2 = pickle.load( open( "NLP_project/L2", "rb" ) )
-L3 = pickle.load( open( "NLP_project/L3", "rb" ) )
-L4 = pickle.load( open( "NLP_project/L4", "rb" ) )
-L5 = pickle.load( open( "NLP_project/L5", "rb" ) )
-L6 = pickle.load( open( "NLP_project/L6", "rb" ) )
-L7 = pickle.load( open( "NLP_project/L7", "rb" ) )
+L1 = pickle.load( open( "Datasets/L1", "rb" ) )
+L2 = pickle.load( open( "Datasets/L2", "rb" ) )
+L3 = pickle.load( open( "Datasets/L3", "rb" ) )
+L4 = pickle.load( open( "Datasets/L4", "rb" ) )
+L5 = pickle.load( open( "Datasets/L5", "rb" ) )
+L6 = pickle.load( open( "Datasets/L6", "rb" ) )
+L7 = pickle.load( open( "Datasets/L7", "rb" ) )
 
 # ------------------------------------------------------| Analysis
 # --------------- | Similarity within music genres
